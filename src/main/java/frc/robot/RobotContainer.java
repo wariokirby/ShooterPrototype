@@ -57,6 +57,8 @@ public class RobotContainer {
       () -> shooter.runManual(1),
        shooter
        ));
+  
+    xbox.a().onTrue(Commands.runOnce(shooter::stop, shooter));
     
     
 

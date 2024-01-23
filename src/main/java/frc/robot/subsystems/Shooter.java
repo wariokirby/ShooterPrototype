@@ -44,9 +44,17 @@ public class Shooter extends SubsystemBase {
 
   public void runManual(double speed){
     flywheelHighLeft.set(speed);
-    flywheelHighRight.set(-speed);
+    //flywheelHighRight.set(-speed);
     flywheelLowLeft.set(-speed);
-    flywheelLowRight.set(speed);
+    //flywheelLowRight.set(speed);
+  }
+
+  public void stop(){
+    flywheelHighLeft.set(0);
+    flywheelHighRight.set(0);
+    flywheelLowLeft.set(0);
+    flywheelLowRight.set(0);
+   
   }
 
 
